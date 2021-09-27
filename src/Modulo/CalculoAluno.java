@@ -1,5 +1,6 @@
 package Modulo;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class CalculoAluno{
@@ -30,9 +31,9 @@ public class CalculoAluno{
         return qtdAluno;
     }
 
-    static String opcao(String Mensagem){
+    static char opcao(String Mensagem){
         System.out.println(Mensagem);
-        String opcao = sc.nextLine();
+        char opcao = sc.nextLine().toUpperCase().charAt(0);
         return opcao;
     }
 
@@ -52,12 +53,12 @@ public class CalculoAluno{
         boolean validar = true;
         do{
             int qtd = qtdAluno();
-            String opcao = opcao("\nInforme:\nA - Para media aritmética\nP - Para media ponderada\nS-Para sair\n");
+            char opcao = opcao("\nInforme:\nA - Para media aritmética\nP - Para media ponderada\nS-Para sair\n");
 
         
            
                 switch(opcao){
-                    case "A":
+                    case 'A':
                      for(int i = 1; i <= qtd ;i++){
                         double nota1 = nota("Informe a primeira nota do aluno "+i+" :");
                         double nota2 = nota("Informe a segunda nota aluno "+i+" :");
@@ -69,7 +70,7 @@ public class CalculoAluno{
                      }
                      break;
 
-                     case "P":  
+                     case 'P':
                       for(int i = 1; i <= qtd ;i++){
                         double nota4= nota("Informe a primeira nota aluno "+i+" :");
                         double nota5 = nota("Informe a segunda nota aluno "+i+" :");
@@ -81,7 +82,7 @@ public class CalculoAluno{
                       }
                       break;
 
-                      case "S":
+                      case 'S':
                          System.out.println("Obrigada!");
                          validar = false;
                          break;
