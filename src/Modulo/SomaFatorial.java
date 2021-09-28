@@ -1,3 +1,9 @@
+//Escreva uma função que recebe por parâmetro um valor inteiro e positivo N e retornao valor de S, calculado segundo a fórmulaabaixo.
+//S = 1 + 1/(1!) + 1/(2!) + 1/(3!) + 1 /(N!)
+//Faça um programa que leia N e imprima o valor retornado pela função.
+
+
+
 package Modulo;
 
 import java.util.Scanner;
