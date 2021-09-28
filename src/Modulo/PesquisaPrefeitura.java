@@ -7,14 +7,16 @@ public class PesquisaPrefeitura {
 
     public static void main(String[] args) {
         int pessoa = 0;
+        int pessoa2= 1;
         boolean novamente = true;
         double salarioPopulacao = 0  ;
         do {
 
-            System.out.printf("\n------------------Pessoa %d------------------\n",pessoa);
+            System.out.printf("\n------------------Pessoa %d------------------\n",pessoa2);
             double qtdFilhos = informa("Informa a quantidade de filhos:");
             double salario = informa("Informa o seu salario:");
             pessoa ++;
+            pessoa2 ++;
             salarioPopulacao += salario;
 
 
