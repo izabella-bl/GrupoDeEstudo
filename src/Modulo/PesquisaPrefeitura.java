@@ -10,6 +10,7 @@ public class PesquisaPrefeitura {
         int pessoa2= 1;
         boolean novamente = true;
         double salarioPopulacao = 0  ;
+
         do {
 
             System.out.printf("\n------------------Pessoa %d------------------\n",pessoa2);
@@ -23,6 +24,7 @@ public class PesquisaPrefeitura {
             novamente = continuar();
 
         }while( novamente);
+
         double mediaPopulacao =MediaSalario(salarioPopulacao,pessoa);
         System.out.printf("\nSalario médio da população: R$ %.2f", mediaPopulacao);
 
