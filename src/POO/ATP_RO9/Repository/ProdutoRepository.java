@@ -19,15 +19,14 @@ public class ProdutoRepository {
         return lista;
     }
 
-    public void update(Produto p ){
-        for (Produto produto : lista) {
-            if(produto.getCodigo() == p.getCodigo()){
-                delete(produto);
-                create(p);
-            }
+    public void update(Produto p ) {
+        if(this.lista.contains(p)) {
+            delete(p);
+            create(p);
         }
     }
     public void delete(Produto p){
         lista.remove(p);
     }
+
 }

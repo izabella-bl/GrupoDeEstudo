@@ -23,11 +23,10 @@ public class Main {
             p.setDescricao(descricao);
 
             System.out.print("\nInforme o valor desse produto: R$ ");
-            Double valor = Double.parseDouble(sc.nextLine());
+            double valor = Double.parseDouble(sc.nextLine());
             p.setValor(valor);
 
             pr.create(p);
-            pr.update(p);
 
         }
 
