@@ -15,6 +15,8 @@ package Modulo;
        Conceito(qtdAlunos);
 
 
+
+
     }
 
     static double informa(String mensagem){
@@ -51,7 +53,7 @@ package Modulo;
                 System.out.println("Conceito do aluno é B");
             }
             else if(media >= 90 ){
-                System.out.println("Conceito do aluno é A");
+                System.out.println("Conceito do aluno é ");
             }
 
         }
