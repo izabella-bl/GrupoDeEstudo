@@ -12,6 +12,21 @@ public class Main {
 
         for (int i = 1; i <= 3; i++) {
             Produto p = new Produto();
+            boolean repetido = false;
+
+            do {
+                for (Produto produto : pr.read()) {
+                    if (produto.equals(p)) {
+                        p = new Produto();
+                        repetido = true;
+                        break;
+                    }
+                    else {
+                        repetido = false;
+                    }
+
+                }
+            }while (repetido);
 
             System.out.printf("\n--------------Produto %d---------------\n", i);
             System.out.println("Informe o nome do produto:");
@@ -27,7 +42,6 @@ public class Main {
             p.setValor(valor);
 
             pr.create(p);
-
         }
 
         for (Produto p : pr.read()) {

@@ -1,6 +1,5 @@
 package POO.ATP_RO9.Domain;
 
-import java.util.Objects;
 import java.util.Random;
 
 public class Produto {
@@ -9,12 +8,8 @@ public class Produto {
     private String descricao;
     private double valor;
 
-    public Produto(){
-        this.codigo =  this.sorteoCod();
-    }
-
-    public void setCodigo(long codigo) {
-        this.codigo = codigo;
+    public Produto (){
+        this.codigo = sorteoCod();
     }
 
     public long getCodigo() {
@@ -45,10 +40,9 @@ public class Produto {
         this.valor = valor;
     }
 
-    private int sorteoCod() {
+    private long sorteoCod() {
         Random gerador = new Random();
         return gerador.nextInt(3);
-
     }
 
     @Override
