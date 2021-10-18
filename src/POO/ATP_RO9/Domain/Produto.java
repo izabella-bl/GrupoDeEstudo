@@ -16,6 +16,10 @@ public class Produto {
         return codigo;
     }
 
+    public void setCodigo(long codigo) {
+        this.codigo = codigo;
+    }
+
     public String getNome() {
         return nome;
     }

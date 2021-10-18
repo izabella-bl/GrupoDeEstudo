@@ -48,5 +48,20 @@ public class Main {
             System.out.println(p);
         }
 
+
+        Produto p = new Produto();
+        System.out.println("Digite o id do produto que deseja atulizar:");
+        int id = Integer.parseInt(sc.nextLine());
+        p.setCodigo(id);
+
+        System.out.println("altere o nome:");
+        String nome = sc.nextLine();
+        p.setNome(nome);
+        pr.update(p);
+
+        for (Produto p1 : pr.read()) {
+            System.out.println(p1);
+        }
+
     }
 }
